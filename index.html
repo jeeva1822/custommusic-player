@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Music Playlist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="playlist-container">
+        <h1>My Music Playlist</h1>
+
+        <!-- Song 1 -->
+        <div class="song" data-audio="audio1.mp3">
+            <img src="album1.webp" alt="Album Cover" class="album-cover">
+            <div class="song-details">
+                <h3>High On Love</h3>
+                <p>Sid Sriram, Yuvan Shankar Raja</p>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+
+        <!-- Song 2 -->
+        <div class="song" data-audio="audio2.mp3">
+            <img src="album2.jpeg" alt="Album Cover" class="album-cover">
+            <div class="song-details">
+                <h3>Water Packet</h3>
+                <p>A.R Rahman ,Santhosh Narayanan , Swheta Mohan</p>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+
+        <!-- Song 3 -->
+        <div class="song" data-audio="audio3.mp3">
+            <img src="album3.jpg" alt="Album Cover" class="album-cover">
+            <div class="song-details">
+                <h3>Nee Partha Vizhigal</h3>
+                <p>Anirudh Ravichandran</p>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

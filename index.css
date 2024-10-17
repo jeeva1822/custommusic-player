@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.playlist-container {
+    background-color:rgba(255, 255, 255, .7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.playlist-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+.song:hover {
+    background-color: #e9e9e9;
+}
+
+.album-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.song-details {
+    flex-grow: 1;
+}
+
+.song-details h3 {
+    font-size: 16px;
+    color: #333333;
+}
+
+.song-details p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.play-button {
+    background-color: #ff5e57;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #ff3b30;
+}
+
+.playing .play-button {
+    background-color: #4caf50;
+}
+
+.playing .play-button:hover {
+    background-color: #45a049;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet View (screens up to 768px) */
+@media (max-width: 768px) {
+    .playlist-container {
+        max-width: 90%;
+    }
+    .song {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .album-cover {
+        margin-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .song-details h3 {
+        font-size: 18px;
+    }
+    .song-details p {
+        font-size: 16px;
+    }
+    .play-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile View (screens up to 480px) */
+@media (max-width: 480px) {
+    .playlist-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+    .song {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .album-cover {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .song-details h3 {
+        font-size: 16px;
+    }
+    .song-details p {
+        font-size: 14px;
+    }
+    .play-button {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
